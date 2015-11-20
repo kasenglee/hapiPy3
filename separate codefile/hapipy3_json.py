@@ -15,7 +15,7 @@ This module provides a database to HITRAN data.
 
 #     HOST - computer at which the NODE/ENGINE is deployed
 
-# NODE or ENGINE ?
+# NODE or ENGINE ? 
 
 # TABLE should be considered as schema-free collection
 #  (e.g. MongoDB-type)

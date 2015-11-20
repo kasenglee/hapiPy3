@@ -4,7 +4,6 @@
 This module provides function definitions to HITRAN data.
 '''
 
-
 # define float range
 def frange(x,y,step):
   while x<y:

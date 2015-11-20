@@ -3,7 +3,7 @@
 '''
 This module provides constants definitions to HITRAN data.
 '''
-
+ 
 # define precision
 __ComplexType__ = complex128
 __IntegerType__ = int64
