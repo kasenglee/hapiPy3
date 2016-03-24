@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>The bluescript of LidarSim display-widget! &mdash; bluescript 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="bluescript 1.0.0 documentation" href="#" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="the-bluescript-of-lidarsim-display-widget">
+<h1>The bluescript of LidarSim display-widget!<a class="headerlink" href="#the-bluescript-of-lidarsim-display-widget" title="Permalink to this headline">¶</a></h1>
+<p>This documentation discribe the details of display-widget in hapipy3.</p>
+<p>LidarSim supports multi-platform, such as
+<strong>Windows, Linux, MacOS</strong>.</p>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="function-bluescript">
+<h2>Function bluescript<a class="headerlink" href="#function-bluescript" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="import-data">
+<h3>Import Data<a class="headerlink" href="#import-data" title="Permalink to this headline">¶</a></h3>
+<p>supported data format:</p>
+<p><strong>TXT, par, netCDF4, HDF5, CSV, JSON</strong></p>
+<p>Lidarsim can open different data files in different format at same time.</p>
+</div>
+<div class="section" id="content-presentation">
+<h3>Content Presentation<a class="headerlink" href="#content-presentation" title="Permalink to this headline">¶</a></h3>
+<p>Features about how the display-widget presents the data have been list in
+<code class="docutils literal"><span class="pre">LidarsimSim显示控件.xlsx</span></code>
+.</p>
+</div>
+<div class="section" id="data-presentation">
+<h3>Data Presentation<a class="headerlink" href="#data-presentation" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>use dockwidget.</li>
+<li>operate as Matlab Workspace.</li>
+<li>display HDF5 as tree structure.</li>
+<li>data will be presented in another window.</li>
+</ol>
+</div>
+<div class="section" id="export-data">
+<h3>Export Data<a class="headerlink" href="#export-data" title="Permalink to this headline">¶</a></h3>
+<p>1. selected data can be export as
+<strong>TXT, par, netCDF4, HDF5, CSV, JSON, SQL</strong>
+file.</p>
+<ol class="arabic simple" start="2">
+<li>some necessary elements, such as comments, time, root, name of variable, need to be added.</li>
+</ol>
+</div>
+<div class="section" id="save-graph">
+<h3>Save Graph<a class="headerlink" href="#save-graph" title="Permalink to this headline">¶</a></h3>
+<p>1. support
+<strong>eps, bmp, tiff, png, pdf</strong>
+as format of graph.</p>
+<ol class="arabic simple" start="2">
+<li>some necessary parameter, such as ppi, color space, etc... need to be considered.</li>
+</ol>
+</div>
+<div class="section" id="interface-layout">
+<h3>Interface Layout<a class="headerlink" href="#interface-layout" title="Permalink to this headline">¶</a></h3>
+<p>The preliminary design of interface can be found in
+<code class="docutils literal"><span class="pre">LidarsimSim显示控件.vsdx</span></code>
+.</p>
+<p>And, plotwidget needs to be embedded in interface.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="version-control">
+<h2>Version control<a class="headerlink" href="#version-control" title="Permalink to this headline">¶</a></h2>
+<p>Our work needs to control two version, libraries and widget.</p>
+<div class="section" id="library-version">
+<h3>Library version<a class="headerlink" href="#library-version" title="Permalink to this headline">¶</a></h3>
+<p>Display-widget lies on many entension libraries, so we need to control their dependency relationships, use
+<code class="docutils literal"><span class="pre">requirement.txt</span></code>
+to ensure the environment.</p>
+</div>
+<div class="section" id="widget-version">
+<h3>Widget version<a class="headerlink" href="#widget-version" title="Permalink to this headline">¶</a></h3>
+<p>widget version and software version need to be considered for compatibility of the widget and software.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="py3qt5-widget">
+<h2>Py3Qt5 widget<a class="headerlink" href="#py3qt5-widget" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">QTreeWidget.</div>
+<div class="line">QCheckBox&#8212;the state can be checked.</div>
+<div class="line">QPushButton.</div>
+<div class="line">QHBoxLayout.</div>
+<div class="line">QVBoxLayout.</div>
+<div class="line">QGridBoxLayout.</div>
+<div class="line">QMenuBar.</div>
+<div class="line">QToolBar.</div>
+<div class="line">QDockWidget.</div>
+<div class="line">QStatusBar.</div>
+<div class="line">QLabelBar.</div>
+<div class="line">QProgressBar.</div>
+<div class="line">QSpmBox.</div>
+<div class="line">QComboBox.</div>
+<div class="line">QListWidget.</div>
+<div class="line">QDialog.</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="project-structure">
+<h2>Project Structure<a class="headerlink" href="#project-structure" title="Permalink to this headline">¶</a></h2>
+<p>The project package should include these files:</p>
+<ul class="simple">
+<li>App.py<ul>
+<li>module a<ul>
+<li>submodule aa</li>
+<li>submodule ab</li>
+<li>...</li>
+</ul>
+</li>
+<li>module b<ul>
+<li>submodule ba</li>
+<li>submodule bb</li>
+<li>...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>requirement.txt</li>
+<li>release.md</li>
+<li>authors.md</li>
+<li>licence.md</li>
+<li>changelog.md</li>
+<li>readme.md</li>
+<li>script to build .exe</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="programming-conventions">
+<h2>Programming Conventions<a class="headerlink" href="#programming-conventions" title="Permalink to this headline">¶</a></h2>
+<p>quick reference:
+<a class="reference external" href="https://github.com/google/styleguide">Google Style Guide</a></p>
+<p>The rules list below are important for us.</p>
+<ol class="arabic">
+<li><p class="first">Import</p>
+</li>
+<li><p class="first">Globel variable</p>
+</li>
+<li><p class="first">Operators</p>
+</li>
+<li><p class="first">Default parameter</p>
+</li>
+<li><p class="first">Function and Method Decorators</p>
+</li>
+<li><p class="first">Threading</p>
+</li>
+<li><dl class="first docutils">
+<dt>Style rules</dt>
+<dd><ul class="first last simple">
+<li>Semicolons</li>
+<li>Line length</li>
+<li>Blank Lines &amp; Whitespace</li>
+<li>Shebang Line</li>
+<li>Comments</li>
+<li>Classes</li>
+<li>Files and Sockets</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Naming</p>
+</li>
+</ol>
+<hr class="docutils" />
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">The bluescript of LidarSim display-widget!</a><ul>
+<li><a class="reference internal" href="#function-bluescript">Function bluescript</a><ul>
+<li><a class="reference internal" href="#import-data">Import Data</a></li>
+<li><a class="reference internal" href="#content-presentation">Content Presentation</a></li>
+<li><a class="reference internal" href="#data-presentation">Data Presentation</a></li>
+<li><a class="reference internal" href="#export-data">Export Data</a></li>
+<li><a class="reference internal" href="#save-graph">Save Graph</a></li>
+<li><a class="reference internal" href="#interface-layout">Interface Layout</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#version-control">Version control</a><ul>
+<li><a class="reference internal" href="#library-version">Library version</a></li>
+<li><a class="reference internal" href="#widget-version">Widget version</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#py3qt5-widget">Py3Qt5 widget</a></li>
+<li><a class="reference internal" href="#project-structure">Project Structure</a></li>
+<li><a class="reference internal" href="#programming-conventions">Programming Conventions</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/bluescript.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, kasenglee.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      
+      |
+      <a href="_sources/bluescript.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
