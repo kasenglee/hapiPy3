@@ -1,1 +1,0 @@
-New branch created for the display widget of hapipy3.
