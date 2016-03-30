@@ -104,7 +104,7 @@ Py3Qt5 widget
     QStatusBar.
     QLabelBar.
     QProgressBar.
-    QSpmBox.
+    QSpinBox.
     QComboBox.
     QListWidget.
     QDialog.
@@ -173,6 +173,20 @@ The rules list below are important for us.
 8. Naming
 
 -----------------------------------------------------------
+
+Test Driven
+--------------------
+1. read data file
+    - different volume(from empty to max supported)
+    - different format
+2. plotwidget
+    plot the graph within different profile functions
+3. robustness
+    Test the robustness in some extreme conditions
+4. Export
+    Files export by the software need to be strictly right
+5. ErrorReport
+    
 
 
 

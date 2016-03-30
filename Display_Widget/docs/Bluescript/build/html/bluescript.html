@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>The bluescript of LidarSim display-widget! &mdash; bluescript 1.0.0 documentation</title>
+    <title>Bluescript of LidarSim Display-widget &mdash; bluescript 1.0.0 documentation</title>
     
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -36,8 +36,8 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="the-bluescript-of-lidarsim-display-widget">
-<h1>The bluescript of LidarSim display-widget!<a class="headerlink" href="#the-bluescript-of-lidarsim-display-widget" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="bluescript-of-lidarsim-display-widget">
+<h1>Bluescript of LidarSim Display-widget<a class="headerlink" href="#bluescript-of-lidarsim-display-widget" title="Permalink to this headline">¶</a></h1>
 <p>This documentation discribe the details of display-widget in hapipy3.</p>
 <p>LidarSim supports multi-platform, such as
 <strong>Windows, Linux, MacOS</strong>.</p>
@@ -127,7 +127,7 @@ to ensure the environment.</p>
 <div class="line">QStatusBar.</div>
 <div class="line">QLabelBar.</div>
 <div class="line">QProgressBar.</div>
-<div class="line">QSpmBox.</div>
+<div class="line">QSpinBox.</div>
 <div class="line">QComboBox.</div>
 <div class="line">QListWidget.</div>
 <div class="line">QDialog.</div>
@@ -198,7 +198,41 @@ to ensure the environment.</p>
 <li><p class="first">Naming</p>
 </li>
 </ol>
+</div>
 <hr class="docutils" />
+<div class="section" id="test-driven">
+<h2>Test Driven<a class="headerlink" href="#test-driven" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><dl class="first docutils">
+<dt>read data file</dt>
+<dd><ul class="first last simple">
+<li>different volume(from empty to max supported)</li>
+<li>different format</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>plotwidget</dt>
+<dd><p class="first last">plot the graph within different profile functions</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>robustness</dt>
+<dd><p class="first last">Test the robustness in some extreme conditions</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Export</dt>
+<dd><p class="first last">Files export by the software need to be strictly right</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">ErrorReport</p>
+</li>
+</ol>
 </div>
 </div>
 
@@ -210,7 +244,7 @@ to ensure the environment.</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="#">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">The bluescript of LidarSim display-widget!</a><ul>
+<li><a class="reference internal" href="#">Bluescript of LidarSim Display-widget</a><ul>
 <li><a class="reference internal" href="#function-bluescript">Function bluescript</a><ul>
 <li><a class="reference internal" href="#import-data">Import Data</a></li>
 <li><a class="reference internal" href="#content-presentation">Content Presentation</a></li>
@@ -228,6 +262,7 @@ to ensure the environment.</p>
 <li><a class="reference internal" href="#py3qt5-widget">Py3Qt5 widget</a></li>
 <li><a class="reference internal" href="#project-structure">Project Structure</a></li>
 <li><a class="reference internal" href="#programming-conventions">Programming Conventions</a></li>
+<li><a class="reference internal" href="#test-driven">Test Driven</a></li>
 </ul>
 </li>
 </ul>
